@@ -18,17 +18,19 @@ function App() {
   const image = images[Math.floor(Math.random() * images.length)];
   return (
     <Grommet theme={theme} full>
-      <Header>
-        <Box direction="column" align="center" fill="horizontal">
+      <Header direction="column">
         <Heading>Rescat animal</Heading>
-        </Box>
       </Header>
-      <Box>
-        <img src={image} style={{height: "40vmin"}}/>
-      </Box>
-      <Box direction="column" align="center">
-        <Text>Has <strong>perdut o trobat un animal</strong>?</Text>
-        <Text>Estem preparant un sistema per poder organitzar tots els animals perduts i així ajudar a trobar-los ❤️.</Text>
+      <Box direction="column" align="center" gap="medium" justify="center">
+        <Box>
+          <img src={image} style={{maxHeight: "450px"}}/>
+        </Box>
+        <Box>
+          <Text>Has <strong>perdut o trobat un animal</strong>?</Text>
+        </Box>
+        <Box style={{textAlign: "center"}}>
+          <Text>Estem preparant un sistema per poder organitzar tots els animals perduts i així ajudar a trobar-los ❤️.</Text>
+        </Box>
       </Box>
       <Footer direction="row" justify="center" align="center" gap="medium" flex={false} pad="large">
         <Anchor href="https://www.instagram.com/terranimal_/"><Instagram size="large" color="plain"/></Anchor>
