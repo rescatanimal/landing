@@ -1,6 +1,6 @@
 import dog from './rescatanimal-dog.svg';
 import cat from './rescatanimal-cat.svg';
-import { Instagram, MailOption } from 'grommet-icons';
+import { Instagram, MailOption, Twitter } from 'grommet-icons';
 import { Grommet, Footer, Header, Heading, Text, Anchor, Box } from 'grommet';
 
 const theme = {
@@ -34,6 +34,7 @@ function App() {
       </Box>
       <Footer direction="row" justify="center" align="center" gap="medium" flex={false} pad="large">
         <Anchor href="https://www.instagram.com/terranimal_/"><Instagram size="large" color="plain"/></Anchor>
+        <Anchor href="https://twitter.com/terranimal9"><Twitter size="large" color="plain"/></Anchor>
         <Anchor href="mailto:terranimal9@gmail.com"><MailOption size="large" color="plain"/></Anchor>
       </Footer>
     </Grommet>
