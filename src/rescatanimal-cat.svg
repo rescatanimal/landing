@@ -98,7 +98,7 @@
 		transform-box: fill-box;
 	}
 	
-	/* Star paw animation - the circles in the paw print */
+	/* Paw print circle animation */
 	@keyframes twinkle {
 		0%, 100% { opacity: 1; }
 		50% { opacity: 0.4; }
