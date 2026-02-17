@@ -14,8 +14,11 @@ const theme = {
 };
 
 function App() {
-  const images = [cat, dog];
-  const image = images[Math.floor(Math.random() * images.length)];
+  const images = [
+    { src: cat, alt: 'Illustrated orange cat with a heart' },
+    { src: dog, alt: 'Illustrated dog with a heart' }
+  ];
+  const selectedImage = images[Math.floor(Math.random() * images.length)];
   return (
     <Grommet theme={theme} full>
       <Header direction="column">
@@ -23,7 +26,7 @@ function App() {
       </Header>
       <Box direction="column" align="center" gap="medium" justify="center">
         <Box>
-          <img src={image} style={{maxHeight: "450px"}}/>
+          <img src={selectedImage.src} style={{maxHeight: "450px"}} alt={selectedImage.alt}/>
         </Box>
         <Box>
           <Text>Has <strong>perdut o trobat un animal</strong>?</Text>

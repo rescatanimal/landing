@@ -105,6 +105,38 @@
 	.st8{fill:none;stroke:#00354C;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
 	.st9{fill:none;stroke:#00354C;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
 	.st10{fill:#F6F6F4;}
+	
+	/* Heart animation */
+	@keyframes heartbeat {
+		0%, 100% { transform: scale(1); }
+		25% { transform: scale(1.1); }
+		50% { transform: scale(1); }
+		75% { transform: scale(1.15); }
+	}
+	
+	#path1326 {
+		animation: heartbeat 2s ease-in-out infinite;
+		transform-origin: center;
+		transform-box: fill-box;
+	}
+	
+	/* Star animation */
+	@keyframes twinkle {
+		0%, 100% { opacity: 1; }
+		50% { opacity: 0.4; }
+	}
+	
+	#XMLID_74_, #XMLID_119_, #XMLID_108_ {
+		animation: twinkle 2.5s ease-in-out infinite;
+	}
+	
+	#XMLID_119_ {
+		animation-delay: 0.8s;
+	}
+	
+	#XMLID_108_ {
+		animation-delay: 1.6s;
+	}
 </style>
 
 <path
