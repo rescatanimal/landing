@@ -23,7 +23,7 @@ function App() {
       </Header>
       <Box direction="column" align="center" gap="medium" justify="center">
         <Box>
-          <img src={image} style={{maxHeight: "450px"}}/>
+          <img src={image} style={{maxHeight: "450px"}} alt="Rescat animal"/>
         </Box>
         <Box>
           <Text>Has <strong>perdut o trobat un animal</strong>?</Text>

@@ -16,3 +16,49 @@
   font-size: calc(10px + 2vmin);
   color: black;
 }
+
+/* Heart animation */
+@keyframes heartbeat {
+  0%, 100% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(1.15);
+  }
+}
+
+.heart-animation {
+  animation: heartbeat 2s ease-in-out infinite;
+  transform-origin: center;
+}
+
+/* Star animation */
+@keyframes twinkle {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
+  }
+  50% {
+    opacity: 0.6;
+    transform: scale(0.9) rotate(180deg);
+  }
+}
+
+.star-animation {
+  animation: twinkle 3s ease-in-out infinite;
+  transform-origin: center;
+}
+
+.star-animation:nth-of-type(2) {
+  animation-delay: 0.5s;
+}
+
+.star-animation:nth-of-type(3) {
+  animation-delay: 1s;
+}

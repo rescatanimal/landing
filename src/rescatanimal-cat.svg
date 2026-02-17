@@ -83,6 +83,38 @@
 	.st13{fill:#A83727;}
 	.st14{opacity:0.24;}
 	.st15{fill:none;stroke:#A83727;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	
+	/* Heart animation */
+	@keyframes heartbeat {
+		0%, 100% { transform: scale(1); }
+		25% { transform: scale(1.1); }
+		50% { transform: scale(1); }
+		75% { transform: scale(1.15); }
+	}
+	
+	#path1326 {
+		animation: heartbeat 2s ease-in-out infinite;
+		transform-origin: center;
+		transform-box: fill-box;
+	}
+	
+	/* Star paw animation - the circles in the paw print */
+	@keyframes twinkle {
+		0%, 100% { opacity: 1; }
+		50% { opacity: 0.4; }
+	}
+	
+	#path25965, #path25967, #path25969 {
+		animation: twinkle 2.5s ease-in-out infinite;
+	}
+	
+	#path25967 {
+		animation-delay: 0.8s;
+	}
+	
+	#path25969 {
+		animation-delay: 1.6s;
+	}
 </style>
 <g
    fill-rule="evenodd"
