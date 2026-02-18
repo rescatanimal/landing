@@ -1,70 +1,76 @@
-# Getting Started with Create React App
+# Rescatanimal Landing Page
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Simple, efficient landing page for Rescatanimal built with vanilla HTML, CSS, and JavaScript.
 
-## Available Scripts
+## About
 
-In the project directory, you can run:
+This is a lightweight static landing page that:
+- Randomly displays a cat or dog illustration
+- Provides information about the Rescatanimal project
+- Links to social media and contact information
 
-### `npm start`
+## Technology Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- **HTML5** - Semantic markup
+- **CSS3** - Responsive styling with flexbox
+- **Vanilla JavaScript** - Minimal JavaScript for random image selection
+- **No build step required** - Direct deployment of static files
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Project Structure
 
-### `npm test`
+```
+public/
+├── index.html           # Main HTML file
+├── styles.css           # All CSS styles
+├── script.js            # JavaScript for random image
+├── rescatanimal-cat.svg # Cat illustration
+├── rescatanimal-dog.svg # Dog illustration
+├── favicon.ico
+├── logo192.png
+├── logo512.png
+├── manifest.json
+└── robots.txt
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Development
 
-### `npm run build`
+To run the site locally:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+npm start
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+This will start a simple HTTP server on `http://localhost:8080`.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Alternatively, you can use any static file server:
 
-### `npm run eject`
+```bash
+cd public
+python3 -m http.server 8080
+# or
+npx serve public
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Deployment
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+The site is deployed using GitHub Pages:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```bash
+npm run deploy
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+This will publish the `public` directory to GitHub Pages with the custom domain `rescatanimal.com`.
 
-## Learn More
+## Benefits of This Approach
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- ✅ **Small bundle size**: ~20 KB total (vs 272 KB+ with React)
+- ✅ **Fast load times**: No framework overhead
+- ✅ **No build step**: Direct file editing and deployment
+- ✅ **No dependencies**: Zero security vulnerabilities
+- ✅ **Better SEO**: Content is immediately visible in HTML
+- ✅ **Works without JavaScript**: Progressive enhancement
+- ✅ **Easy maintenance**: Simple, straightforward codebase
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Previous Version
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This landing page was previously built with React (Create React App). The conversion to vanilla HTML/CSS/JS was done to improve performance, reduce complexity, and eliminate dependency management overhead for this simple static site.
