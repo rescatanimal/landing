@@ -56,7 +56,20 @@ npx serve public
 
 ## Deployment
 
-The site is deployed using GitHub Pages:
+### Automatic Deployment (Recommended)
+
+The site is automatically deployed to GitHub Pages via GitHub Actions when changes are pushed to the `main` branch. The workflow:
+
+- Runs on every push to `main`
+- Can also be triggered manually from the Actions tab
+- Deploys the `public` directory to GitHub Pages
+- Includes the custom domain `rescatanimal.com` (via CNAME file)
+
+See `.github/workflows/deploy.yml` for the workflow configuration.
+
+### Manual Deployment
+
+Alternatively, you can deploy manually using:
 
 ```bash
 npm run deploy
