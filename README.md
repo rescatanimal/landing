@@ -40,7 +40,10 @@ To run the site locally:
 npm start
 ```
 
-This will start a simple HTTP server on `http://localhost:8080`.
+This will start a simple HTTP server on `http://localhost:8080` using Python 3.
+
+**Prerequisites:**
+- Python 3 (for the development server)
 
 Alternatively, you can use any static file server:
 
@@ -63,7 +66,7 @@ This will publish the `public` directory to GitHub Pages with the custom domain 
 
 ## Benefits of This Approach
 
-- ✅ **Small bundle size**: ~20 KB total (vs 272 KB+ with React)
+- ✅ **Small bundle size**: ~112 KB total (vs 1.3 MB+ with React)
 - ✅ **Fast load times**: No framework overhead
 - ✅ **No build step**: Direct file editing and deployment
 - ✅ **No dependencies**: Zero security vulnerabilities
